@@ -1,5 +1,6 @@
 import React,{useContext} from 'react';
 import Product from '../components/Product';
+import Hero from '../components/Hero';
 
 import { ProductContext } from '../contexts/ProductContext';
 
@@ -13,7 +14,10 @@ const filteredProducts = products.filter((item)=> {
 })
 
 
-  return <div className='flex flex-row flex-wrap py-16 justify-start gap-x-12 gap-y-6 px-32'>{
+  return( 
+    <div>
+    <Hero />
+    <div className='flex flex-row flex-wrap py-16 justify-start gap-x-12 gap-y-6 px-32'>{
     filteredProducts.map((product) => {
       return (
       <Product product={product} key={product.id}/>
@@ -21,7 +25,8 @@ const filteredProducts = products.filter((item)=> {
 
     })
   }
-  </div>;
+  </div>
+  </div>);
 };
 
 export default Home;

@@ -10,11 +10,26 @@ import CartItem from './CartItem'
 const Sidebar = () => {
 
   const {isOpen, handleClose} = useContext(SidebarContext);
-  const {}=useContext(CartContext)
+  
+  const {cart, clearCart, total}=useContext(CartContext);
 
-  return <div className={ `${isOpen? 'right-0':'-right-full'} w-full md:w-1/4 h-full bg-slate-200 fixed top-0 z-20`}>
+  return <div className={ `${isOpen? 'right-0':'-right-full'} w-full md:w-1/4 h-full  bg-slate-200 fixed top-0 z-20`}>
+    <div>
     <div>Shoping Bag(0)</div>
     <div onClick={handleClose}>Back</div>
+    </div>
+
+    <div className='h-3/4 overflow-y-auto'>{cart.map((item)=>{
+      return<CartItem item={item} key={item.id} />
+
+    })}</div>
+
+      <div>{`Total: $ ${parseFloat(total).toFixed(2)}`}</div>
+        <div onClick={clearCart}>Clear Cart</div>
+        <div>View cart</div>
+        <div>Checkout</div>
+
+
     </div>;
 };
 

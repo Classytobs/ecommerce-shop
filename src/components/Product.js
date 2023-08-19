@@ -13,7 +13,7 @@ const Product = ({product}) => {
         <div className='flex flex-col'>
           <img src={image} alt='/' className='h-64 w-48 rounded-md '/>
               <div className=' absolute top-0 right-0'>
-                <button className='bg-red-500' onClick={()=>{addToCart (id)}}>Add to cart</button>
+                <button className='bg-red-500' onClick={()=>{addToCart (product, id)}}>Add to cart</button>
                 <Link to={`/product/${id}`} className='bg-white' >
                 <BsPlus />
 
