@@ -21,8 +21,11 @@ const ProductDetails = () => {
   const {image,title,price, description}=product
 
   return <div>
-    <div>image</div>
-    <div>text</div>
+    <div><img className='w-1/6 h-1/6' src={image} alt='productimage' /></div>
+    <div>{title}</div>
+    <div>{price}</div>
+    <div>{description}</div>
+    <button onClick={()=> addToCart(product, product.id)}>Add to cart</button>
   </div>;
 };
 
