@@ -11,9 +11,9 @@ const Hero = () => {
 
               <h2 className='text-2xl'>Then it is clear we are the right store for you</h2>   
 
-              <div className='border-solid mt-6 p-3 max-w-fit rounded-md text-white text-xl md:text-2xl 
-              bg-blue-500 hover:bg-blue-400 cursor-pointer'>
-                <a href='#contact' >Find Out More</a>
+              <div className='mt-12'>
+                <a href='#product' className='border-solid p-3 max-w-fit rounded-md text-white text-xl md:text-2xl 
+              bg-blue-500 hover:bg-blue-400 cursor-pointer'>Find Out More</a>
             </div>
       </div>
 

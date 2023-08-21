@@ -15,7 +15,7 @@ const Header = () => {
         <div className="text-blue-600">Store</div>
     </div>
         <div>   
-            <div onClick={handleClose}><BsBag className='text-2xl'/></div>
+            <div onClick={handleClose} className='cursor-pointer'><BsBag className='text-2xl'/></div>
             <div>{itemAmount}</div>
             </div>     
         </div>

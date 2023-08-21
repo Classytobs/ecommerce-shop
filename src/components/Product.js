@@ -9,7 +9,7 @@ const Product = ({product}) => {
   const {id, image, price, title, category}=product
   const {addToCart}=useContext(CartContext)
 
-  return <div className='w-72 h-96'>
+  return <div className='w-72 h-96' id='product'>
         <div className='relative rounded-md shadow-2xl flex justify-center items-center p-8 group transition w-72 h-72 mb-4'>
           <div className='w-full w-full flex justify-center items-center'>
             <div className='w-32'>
