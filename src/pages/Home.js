@@ -18,7 +18,11 @@ const filteredProducts = products.filter((item)=> {
     <div className='mt-6 py-8 flex flex-col items-center justify-center 
     content-center '>
     <Hero />
-    <div className='flex gap-16 flex-wrap px-4 md:px-16 lg:px-40 justify-center pt-32'>{
+    <div className='text-3xl 
+              lg:text-5xl font-medium mt-16'>Trending Products
+    </div>
+
+    <div className='flex gap-16 flex-wrap px-4 md:px-16 lg:px-40 justify-center pt-16'>{
     filteredProducts.map((product) => {
       return (
       <Product product={product} key={product.id}/>
