@@ -15,8 +15,8 @@ const Product = ({product}) => {
             <div className='w-32'>
           <img className='group-hover:scale-110 transition duration-300'src={image} alt='/'/>
           </div>
-          <div className=' absolute top-0 -right-11 group-hover:right-2  flex flex-col bg-blue-300 
-          gap-y-2 opacity-0 group-hover:opacity-100 items-center p-2 transition-all duration-300'>
+          <div className='absolute top-0 right-2 md:top-0 md:-right-11 group-hover:right-2 flex flex-col bg-blue-300 
+          gap-y-2 md:opacity-0 group-hover:opacity-100 items-center p-2 transition-all duration-300'>
                 <button className='text-white flex justify-center items-center h-8 w-8 bg-blue-500' onClick={()=>{addToCart (product, id)}}>
                 <BsPlus className='text-3xl' />
                 </button>
